@@ -1,0 +1,32 @@
+<div class="container">
+    <h2 class="text-center">Add Soal</h2>
+    <form action="/soal/tambahSoal" method="post" class="center">
+      <div class="form-group">
+      <label for="code">Code Soal</label> <br>
+      <input class="form-control" type="text" name="code"> <br>
+      <label for="name">Nama Soal</label> <br>
+      <input class="form-control" type="text" name="name"> <br>
+      <label for="namadeskripsi">Deskripsi</label> <br>
+      <input class="form-control" type="text" name="namadeskripsi"> <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="JawabanId">Option</label>
+        </div>
+        <select class="custom-select" name="genre" id="genre">
+          <option selected>Choose...</option>
+            <option value="animasi">Animasi</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horor">Horor</option>
+            <option value="religius">Religius</option>
+            <option value="thriller">Thriller</option>
+        </select>
+      </div>
+     <br><br>
+    </div>
+    <div class=" mx-auto" style="width: 160px;">
+      <button class="btn btn-primary" type="submit">Tambah Soal</button>
+      <br><br>
+    </div>
+    </form>
+    </div>

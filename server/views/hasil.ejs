@@ -1,0 +1,58 @@
+<%- include('assets/head') -%>
+
+<h2 style="text-align: center;">Hasil Test</h2>
+<button class="btn btn-warning"><a href="/test">+Tambah Hasil</a></button>
+<table class="table table-dark table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Kelas</th>
+            <th scope="col">Jawaban 1</th>
+            <th scope="col">Jawaban 2</th>
+            <th scope="col">Jawaban 3</th>
+            <th scope="col">Jawaban 4</th>
+            <th scope="col">Jawaban 5</th>
+            <th scope="col">Jawaban 6</th>
+            <th scope="col">Jawaban 7</th>
+            <th scope="col">Jawaban 8</th>
+            <th scope="col">Jawaban 9</th>
+            <th scope="col">Jawaban 10</th>
+            <th scope="col">Hasil</th>
+            <th scope="col">Jawaban Visual</th>
+            <th scope="col">Jawaban Audio</th>
+            <th scope="col">Jawaban Kinestetic</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+
+        <% data.forEach((e, index) =>{ %>
+         <tr>
+             <th scope="row"><%= index+1%> </th>
+             <td><%= e.nama %> </td>
+             <td><%= e.kelas %></td>
+             <td><%= e.jawaban1 %> </td>
+             <td><%= e.jawaban2 %> </td>
+             <td><%= e.jawaban3 %> </td>
+             <td><%= e.jawaban4 %> </td>
+             <td><%= e.jawaban5 %> </td>
+             <td><%= e.jawaban6 %> </td>
+             <td><%= e.jawaban7 %> </td>
+             <td><%= e.jawaban8 %> </td>
+             <td><%= e.jawaban9 %> </td>
+             <td><%= e.jawaban10 %> </td>
+             <td><%= e.hasil %> </td>
+             <td><%= e.visual %> </td>
+             <td><%= e.audio %> </td>
+             <td><%= e.kinestetic %> </td>
+
+
+             <td>  
+                <button class="btn btn-light btn-lg"><a href="/hasil/<%=e.id%>/delete/">Delete</a></button> 
+            </td>
+         </tr>
+        <% }) %>
+    </tbody>
+</table>

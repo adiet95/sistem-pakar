@@ -1,0 +1,46 @@
+<!-- <%- include('partials/header') %> -->
+<!-- Content-->
+<div class="container">
+<h2 class="text-center">Edit Movie</h2>
+<form action="/soal/<%=soal.id%>/edit" method="post" class="center">
+  <div class="form-group">
+  <label for="name">Movie Name</label> <br>
+  <input class="form-control" type="text" name="name" value="<%= movie.name %> "> <br>
+  <label for="released_year">Released Year</label> <br>
+  <input class="form-control" type="text" name="released_year" value="<%= movie.released_year %> "> <br>
+  <label for="genre">Genre</label> <br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Option</label>
+    </div>
+    <select class="custom-select" name="genre" id="genre" value="<%= movie.genre %> ">
+      <option selected>Choose...</option>
+        <option value="animasi" <%= movie.genre === 'animasi' ? 'selected' : '' %> >Animasi</option>
+        <option value="comedy" <%= movie.genre === 'comedy' ? 'selected' : '' %> >Comedy</option>
+        <option value="drama" <%= movie.genre === 'drama' ? 'selected' : '' %>>Drama</option>
+        <option value="horor"  <%= movie.genre === 'horor' ? 'selected' : '' %>>Horor</option>
+        <option value="religius" <%= movie.genre === 'religius' ? 'selected' : '' %>>Religius</option>
+        <option value="thriller" <%= movie.genre === 'thriller' ? 'selected' : '' %>>Thriller</option>
+    </select>
+  </div>
+  <br>
+  <label for="productionHouse">Production House</label> <br>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Option</label>
+    </div>
+    <select class="custom-select" name="ProductHouseId" id="ProductHouseId">
+      <option selected>Choose...</option>
+      <% productionHouse.forEach(e => { %>
+        <option value="<%= e.id %>" <%= movie.name === e.id ? 'selected' : '' %>> <%= e.name_prodHouse %> </option>
+      <% }) %>
+    </select>
+  </div>
+ <br><br>
+</div>
+<div class=" mx-auto" style="width: 160px;">
+  <button class="btn btn-primary" type="submit">Edit Movie</button>
+  <br><br>
+</div>
+</form>
+</div>

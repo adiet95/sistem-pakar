@@ -1,0 +1,19 @@
+<%- include('assets/head') -%>
+
+<body class="text-center">
+  <div id="cont-login" class="mx-auto container-sm" style="margin: 20px; padding: 30px; background-color: azure; width: 500px;">
+  <form action="/" method="post" class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <% if (errors) { %>
+    <p style="background:gray; color:white;">Error : <%= errors %></p>
+    <% } %>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  </form><br><br>
+  <p>Don't have account? Please <a href="/register">register</a>.</p>
+</div>
+</body>
+</html>

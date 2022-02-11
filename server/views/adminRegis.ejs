@@ -1,0 +1,18 @@
+<%- include('assets/head') -%>
+<div class="container-sm mx-auto" style="margin: 20px; padding: 30px; background-color: azure; width: 500px;">
+<body class="text-center">
+  <form action="/admin/register" method="post" class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Register</h1><br>
+    <p>Already have account? Please <a href="/">login</a>.</p>
+    <label for="inputUsername" class="sr-only">Username</label><br>
+    <input type="text" name="username" id="inputUsername" class="form-control form-control" placeholder="Username" required autofocus><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+    <label for="inputEmail" class="sr-only">Nama</label><br>
+    <input type="text" name="nama" id="nama" class="form-control" placeholder="nama" required><br>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+  </form>
+</div>
+</body>
+</html>

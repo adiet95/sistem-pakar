@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Test Penentu Gaya Belajar</title>
+</head>
+<body>
+  <div class="container" style="margin: 20px; padding: 30px; background-color: azure;">
+    <h2 class="text-center">Test Penentu Gaya Belajar</h2>
+    <form action="/test" method="post" class="center">
+      <div class="form-group">
+      <label for="nama">Nama Lengkap</label> <br>
+      <input class="form-control" type="text" name="nama"> <br>
+      <label for="Kelas">Kelas</label> <br>
+      <input class="form-control" type="text" name="kelas"> <br>
+
+      <!-- SOAL NO 1 -->
+      <label for="jawaban1" style="font-weight: bold;">Tipe kepribadian mana yang menunjukan diri anda?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban1" id="flexRadioDefault1" value="visual">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Mudah mengingat hal yang dilihat
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban1" id="flexRadioDefault2" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Mudah mengingat hal yang dilakukan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban1" id="flexRadioDefault3" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Mudah mengingat hal yang didengar
+          </label>
+        </div>
+        <br>
+
+        <!-- SOAL NO 2 -->
+      <label for="jawaban1" style="font-weight: bold;">Apa yang paling anda sukai?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban2" id="flexRadioDefault4" value="visual">
+          <label class="form-check-label" for="flexRadioDefault4">
+            Sangat menyukai lukisan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban2" id="flexRadioDefault5"  value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault5">
+            Sangat menyukai tarian
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban2" id="flexRadioDefault6" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault6">
+            Sangat menyukai musik
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 3 -->
+      <label for="jawaban1" style="font-weight: bold;">Tipe kecenderungan seperti apa yang ada didiri anda?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban3" id="flexRadioDefault7" value="visual">
+          <label class="form-check-label" for="flexRadioDefault7">
+            Cenderung memperhatikan orang pada wajah dan pakaian yang dikenakan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban3" id="flexRadioDefault8" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault8">
+            Cenderung memperhatikan orang pada pembicaraan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban3" id="flexRadioDefault9" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault9">
+            Cenderung memperhatikan orang pada gerak- geriknya
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 4 -->
+      <label for="jawaban1" style="font-weight: bold;">Kegiatan mana yang paling anda senangi?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban4" id="flexRadioDefault10" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault10">
+            Senang menghafal sesuatu dengan mengulangi kata-kata dengan suara keras.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban4" id="flexRadioDefault11" value="visual">
+          <label class="form-check-label" for="flexRadioDefault11">
+            Senang menghafal sesuatu dengan menulis.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban4" id="flexRadioDefault12" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault12">
+            Senang menghafal dengan sesuatu yang berjalan.
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 5 -->
+      <label for="jawaban1" style="font-weight: bold;">Pilihlah yang sesuai dengan diri anda?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban5" id="flexRadioDefault13" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault13">
+            Dalam berbicara menjelaskan, cenderung menggerakan tangan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban5" id="flexRadioDefault14" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault14">
+            Dalam berbicara menjelaskan, cenderung menyampaikan secara lisan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban5" id="flexRadioDefault15" value="visual">
+          <label class="form-check-label" for="flexRadioDefault15">
+            Dalam berbicara menjelaskan, cenderung membuat coretan kertas
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 6 -->
+      <label for="jawaban1" style="font-weight: bold;">Apa yang paling membuat anda terganggu saat sedang belajar?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban6" id="flexRadioDefault16" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault16">
+            Mudah terganggu dengan benda yang bergerak
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban6" id="flexRadioDefault17" value="visual">
+          <label class="form-check-label" for="flexRadioDefault17">
+            Mudah terganggu dengan barang barang berantakan disekitarnya
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban6" id="flexRadioDefault18" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault18">
+            Mudah terganggu dengan suara yang berisik
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 7 -->
+      <label for="jawaban1" style="font-weight: bold;">Apa yang membuat anda tertarik saat melihat sesuatu?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban7" id="flexRadioDefault19" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault19">
+            Sangat tertarik pada gerakan tubuh (seperti : tarian dan olahraga)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban7" id="flexRadioDefault20" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault20">
+            Sangat tertarik pada suara (seperti : music)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban7" id="flexRadioDefault21" value="visual">
+          <label class="form-check-label" for="flexRadioDefault21">
+            Sangat tertarik pada warna (seperti : gambar atau lukisan)
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 8 -->
+      <label for="jawaban1" style="font-weight: bold;">Ketika anda sedang menyelesaikan soal tes, kegiatan mana yang paling menunjukan diri anda?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban8" id="flexRadioDefault22" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault22">
+            Menyelesaikan soal tes dengan membayangkan sesuatu di otak
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban8" id="flexRadioDefault23" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault23">
+            Menyelesaikan soal tes dengan mengucapkan soal berulang - ulang
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban8" id="flexRadioDefault24" value="visual">
+          <label class="form-check-label" for="flexRadioDefault24">
+            Menyelesaikan soal tes dengan membuat coretan
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 9 -->
+      <label for="jawaban1" style="font-weight: bold;">Apa yang membuat anda sulit berkonsentrasi saat sedang menyelesaikan soal tes?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban9" id="flexRadioDefault25" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault25">
+            Sulit konsentrasi ketika sedang menyelesaikan soal tes ada keributan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban9" id="flexRadioDefault26" value="visual">
+          <label class="form-check-label" for="flexRadioDefault26">
+            Sulit konsentrasi ketika soal tes penuh tulisan atau tidak rapi
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban9" id="flexRadioDefault27" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault27">
+            Sulit konsentrasi ketika menyelesaikan soal tes terlalu lama duduk diam dan tenang
+          </label>
+        </div>
+        <br>
+
+         <!-- SOAL NO 10 -->
+      <label for="jawaban1" style="font-weight: bold;">Cara mengajar guru seperti apa yang paling anda sukai ketika sedang mengajari anda didepan kelas?</label> <br>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban10" id="flexRadioDefault28" value="visual">
+          <label class="form-check-label" for="flexRadioDefault28">
+            Suka diajari oleh guru dengan cara mengambarkan sesuatu di papan tulis
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban10" id="flexRadioDefault29" value="kinestetic">
+          <label class="form-check-label" for="flexRadioDefault29">
+            Suka diajari oleh guru dengan cara mempraktikan
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="jawaban10" id="flexRadioDefault30" value="audiotory">
+          <label class="form-check-label" for="flexRadioDefault30">
+            Suka diajari oleh guru dengan cara menjelaskan dengan suara yang indah
+          </label>
+        </div>
+        <br>
+        
+      </div>
+     <br><br>
+    <div class=" mx-auto" style="width: 160px;">
+      <button class="btn btn-primary" type="submit">Submit</Soal></button>
+      <br><br>
+    </div>
+  </form>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
+
+
+
